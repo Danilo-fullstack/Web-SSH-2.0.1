@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540.329" height="154.132" viewBox="0 0 540.329 154.132">
+  <g id="Logo3" transform="translate(0)">
+    <text id="Web_SSH" data-name="Web SSH" transform="translate(333.329 105.338)" fill="#fff" font-size="97" font-family="Poppins-ExtraLight, Poppins" font-weight="200"><tspan x="-206.561" y="0">Web SSH</tspan></text>
+    <g id="startup">
+      <path id="Caminho_170" data-name="Caminho 170" d="M99.093,128.444v12.844h51.378V128.444H181.3V110.462a28.282,28.282,0,0,0-25.689-28.126V51.378C155.609,34.243,142.281,0,124.782,0S93.956,34.243,93.956,51.378V82.335a28.282,28.282,0,0,0-25.689,28.126v17.982H99.093Zm46.24,7.707h-41.1v-7.707h41.1v7.707Zm-17.982-12.844h-5.138V102.755h5.138Zm48.809-12.844v12.844H155.609V87.483A23.153,23.153,0,0,1,176.16,110.461ZM99.093,51.378c0-14.833,12.153-46.24,25.689-46.24s25.689,31.407,25.689,46.24v71.928H132.489v-23.12a2.57,2.57,0,0,0-2.569-2.569H119.645a2.57,2.57,0,0,0-2.569,2.569v23.12H99.094V51.378ZM73.4,123.306V110.461A23.153,23.153,0,0,1,93.956,87.483v35.823Z" transform="translate(-68.267)" fill="#ff9e24"/>
+      <path id="Caminho_171" data-name="Caminho 171" d="M208.284,203.235a20.551,20.551,0,1,0-20.551-20.551A20.552,20.552,0,0,0,208.284,203.235Zm0-35.964a15.413,15.413,0,1,1-15.413,15.413A15.413,15.413,0,0,1,208.284,167.271Z" transform="translate(-151.769 -113.325)" fill="#ff9e24"/>
+      <path id="Caminho_172" data-name="Caminho 172" d="M232.142,216.818a10.275,10.275,0,1,0-10.275-10.275A10.276,10.276,0,0,0,232.142,216.818Zm0-15.413A5.138,5.138,0,1,1,227,206.542,5.136,5.136,0,0,1,232.142,201.4Z" transform="translate(-175.627 -137.183)" fill="#ff9e24"/>
+      <rect id="Retângulo_88" data-name="Retângulo 88" width="5.138" height="10.275" transform="translate(5.138 133.581)" fill="#ff9e24"/>
+      <rect id="Retângulo_89" data-name="Retângulo 89" width="5.138" height="15.413" transform="translate(15.413 138.719)" fill="#ff9e24"/>
+      <rect id="Retângulo_90" data-name="Retângulo 90" width="5.138" height="10.275" transform="translate(102.755 133.581)" fill="#ff9e24"/>
+      <rect id="Retângulo_91" data-name="Retângulo 91" width="5.138" height="15.413" transform="translate(92.479 138.719)" fill="#ff9e24"/>
+      <path id="Caminho_173" data-name="Caminho 173" d="M237.663,72.577a12.859,12.859,0,0,0-12.844-12.844h-2.055a12.859,12.859,0,0,0-12.844,12.844v2.569h27.744V72.577ZM215.5,70.009a7.722,7.722,0,0,1,7.267-5.138h2.055a7.722,7.722,0,0,1,7.267,5.138Z" transform="translate(-167.276 -41.751)" fill="#ff9e24"/>
+      <rect id="Retângulo_92" data-name="Retângulo 92" width="5.138" height="5.138" transform="translate(15.413 113.03)" fill="#ff9e24"/>
+      <rect id="Retângulo_93" data-name="Retângulo 93" width="5.138" height="5.138" transform="translate(92.479 113.03)" fill="#ff9e24"/>
+    </g>
+  </g>
+</svg>

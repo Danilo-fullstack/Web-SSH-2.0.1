@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    width: 100%;
+}
+/*------ Cabeçalho ------ */
+header {
+    display: grid;
+    min-height: 450px;
+    background-color: #320B66;
+}
+.logo {
+    position: absolute;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    margin-right: 300px;
+    z-index: 10;
+}
+.burger {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    opacity: 0.9;
+}
+.burger div {
+    width: 35px;
+    height: 8px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: none;
+    transition: .5s;
+}
+.burger-x {
+    top: 30px;
+}
+.burger-x div {
+    width: 40px;
+    transition: .4s ease-in-out;
+}
+.burger #ultimo-burger {
+    margin-bottom: 0px !important;
+}
+.burger-x #primeiro-burger {
+    transform: rotate(38deg);
+}
+.burger-x #segundo-burger {
+    display: none;
+}
+.burger-x #ultimo-burger {
+    transform: translateY(-11px) rotate(-38deg);
+}
+.menu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    background-color: #000B33;
+    transition: transform .5s;
+}
+.menu-open {
+    transform: translateX(0%);
+    position: fixed;
+    transition: transform .5s;
+}
+.menu li {
+    margin: 15px;
+}
+.menu li a{
+    font-size: 22pt;
+    color: #fff;
+    padding: 10px;
+}
+.header-welcome {
+    margin-top: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+.header-welcome h4 {
+    line-height: 35px;
+    color: #FF9E24;
+    font-size: 26pt;
+}
+#txt-alta {
+    margin-bottom: 10px;
+}
+.header-welcome p {
+    line-height: 30px;
+}
+.header-welcome p span {
+    color: #FF9E24;
+}
+.header-welcome a {
+    color: white;
+}
+.header-welcome .veja-abaixo {
+    display: inline-block;
+    padding: 3px 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #FF9E24;
+}
+/* ------ Fim do cabeçalho ------ */
+
+/* ------ Corpo da Página ------ */
+section {
+    text-align: center;
+}
+section .title-planos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;    
+}
+section .title-planos h3 {
+    font-size: 19pt;
+}
+section .title-planos div {
+    width: 22%;
+    height: 3px;
+    background-color: #FF9E24;
+}
+.planos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 20px;
+}
+.planos .box-plano {
+    margin-top: 60px;
+    width: 250px;
+    height: 450px;
+    background-color: #FF9E24;
+}
+/* ------------------------------------------------ */
