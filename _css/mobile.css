@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap'); */
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins-light, sans-serif;
 }
 body {
     width: 100%;
@@ -69,6 +69,7 @@ header {
     transform: translateX(-100%);
     background-color: #000B33;
     transition: transform .5s;
+    z-index: 1;
 }
 .menu-open {
     transform: translateX(0%);
@@ -79,6 +80,7 @@ header {
     margin: 15px;
 }
 .menu li a{
+    font-family: poppins-regular;
     font-size: 22pt;
     color: #fff;
     padding: 10px;
@@ -92,6 +94,7 @@ header {
     text-align: center;
 }
 .header-welcome h4 {
+    font-family: poppins-semibold;
     line-height: 35px;
     color: #FF9E24;
     font-size: 26pt;
@@ -109,6 +112,7 @@ header {
     color: white;
 }
 .header-welcome .veja-abaixo {
+    font-size: 11pt;
     display: inline-block;
     padding: 3px 30px;
     margin-top: 10px;
@@ -121,6 +125,7 @@ header {
 section {
     text-align: center;
 }
+/*---------- Planos ----------*/
 section .title-planos {
     display: flex;
     flex-direction: column;
@@ -133,7 +138,7 @@ section .title-planos h3 {
     font-size: 19pt;
 }
 section .title-planos div {
-    width: 22%;
+    width: 16%;
     height: 3px;
     background-color: #FF9E24;
 }
@@ -145,9 +150,137 @@ section .title-planos div {
     margin: 60px 20px;
 }
 .planos .box-plano {
+    position: relative;
     margin-top: 60px;
-    width: 250px;
-    height: 450px;
-    background-color: #FF9E24;
+    width: 85%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.planos .box-plano::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../_img/price_bg.png) no-repeat;
+    background-size: 100%;
+}
+.planos .box-plano .plan-center {
+    /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.planos .box-plano .titulo-plan {
+    font-family: poppins-light;
+    font-size: 25pt;
+    font-weight: 300;
+    color: white;
+    display: inline-block;
+}
+@media screen and (max-width: 300px) {
+    .planos .box-plano .titulo-plan {
+        font-size: 18pt;
+    }
+}
+.planos .box-plano .preco-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    color: white;
+}
+.planos .box-plano .plan-center .underline-plan {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: -22px;
+}
+.planos .box-plano .preco-plan p:first-child {
+    margin-top: -46px;
+    margin-right: 5px;
+    font-size: 18pt;
+}
+.planos .box-plano .preco-plan #p-meio-plan{
+    font-family: poppins-extralight;
+    font-size: 70pt;
+}
+.planos .box-plano .preco-plan p:last-child {
+    margin-top: 38px;
+    font-size: 16pt;
+}
+.planos .plano-familiar .preco-plan p:first-child { /*Margem do Real no plano familiar*/
+    margin-right: -5px;
+}
+.planos .plano-plus .preco-plan p:first-child { /*Margem do Real no plano plus*/
+    margin-right: 0px;
+}
+@media screen and (max-width: 280px) {
+    .planos .box-plano .preco-plan p:first-child {
+        font-size: 12pt;
+    }
+    .planos .box-plano .preco-plan #p-meio-plan{
+        font-size: 60pt;
+    }
+    .planos .box-plano .preco-plan p:last-child {
+        font-size: 14pt;
+    }
+}
+@media screen and (min-width: 360px) {
+    .planos .box-plano {
+        width: 280px;
+        height: 490px;
+    }
+}
+.planos .box-back-planos {
+    position: absolute;
+    background: url(../_img/price_bg.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 60%;
+}
+.descricao-plan {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.descricao-plan .line-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    display: inline-flex;
+}
+.descricao-plan .line-plan i {
+    font-size: 9pt;
+    width: 20px;
+    margin-right: 3px;
+}
+.btn-comprar {
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    background: none;
+    border: none;
+    z-index: 1;
+}
+.planos .plano-basico {
+    background-image: linear-gradient(#FF9E24, #E74A4C);
+}
+
+.planos .plano-familiar {
+    background-image: linear-gradient(#E84A4B, #700D7D);
+}
+.planos .plano-plus {
+    background-image: linear-gradient(#1750A0, #211053);
+}
+/*---------- Termina os planos ----------*/
 /* ------------------------------------------------ */
