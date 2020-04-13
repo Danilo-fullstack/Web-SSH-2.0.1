@@ -1,1 +1,249 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 720px) {
+    /*------------ Começa Header ------------*/
+    header {
+        /* display: grid;
+        grid-template-columns: auto auto auto; */
+        display: flex;
+        align-self: initial;
+        justify-content: center;
+        min-height: 630px;
+    }
+    .center-header {
+        width: 100%;
+        height: 100%;
+        margin: 20px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-header a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        position: static;
+        margin: 0;
+        padding-top: 0;
+        z-index: 0;
+    }
+    #chec, .burger {
+        display: none;
+    }
+    .menu {
+        position: static;
+        top: auto;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(0) !important;
+        background-color: transparent;
+        z-index: 1;
+    }
+    .menu li a {
+        font-size: 12pt;
+        font-family: poppins-regular;
+        font-weight: normal;
+        transition: color .25s;
+    }
+    .menu li a:hover {
+        color: #FF9E24;
+        transition: color .25s;
+    }
+    #btn-login {
+        border: 2.4px solid #1750A0;
+        border-radius: 50px;
+        padding: 3px 20px;
+        transition: border .3s;
+    }
+    #btn-login:hover {
+        border: 2.4px solid rgb(27, 92, 184);
+        transition: border .3s;
+        color: white;
+    }
+    /*----- Welcome -----*/
+    .header-welcome {
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+        margin: 200px 0 0 0;
+    }
+    .header-welcome h4 {
+        font-size: 40pt;
+        line-height: 50px;
+    }
+    #txt-alta {
+        margin-bottom: 25px;
+    }
+    .header-welcome p {
+        font-family: poppins-medium;
+        line-height: 35px;
+    }
+    .center-header-welcome .txt1-welcome {
+        font-size: 18pt;
+    }
+    .center-header-welcome p span {
+        font-size: 18pt;
+        font-family: poppins-medium;
+    }
+    .veja-abaixo {
+        margin-top: 25px !important;
+        transition: background-color .3s;
+    }
+    .veja-abaixo:hover {
+        background-color: rgb(230, 128, 4);
+        transition: background-color .3s;
+    }
+    /* ----------------- */
+    /*------------ Termina Header ------------*/
+
+    /*------------ Começa Section ------------*/
+    /* -------- Planos --------- */
+    .planos {
+        display: block;
+    }
+    .planos .center-planos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .box-plano{
+        transition: transform .4s;
+    }
+    .box-plano:hover {
+        transform: translateY(-7px);
+        transition: transform .4s;
+    }
+    /* ---------------------------- */
+    /*----- Internet Ilimitada -----*/
+    .internet-ilimitada {
+        position: relative;
+        z-index: 10 !important;
+        height: 450px !important;
+        /* background-color: transparent; */
+    }
+    .internet-ilimitada .box-center {
+        margin-left: 400px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .title-internet-ilimitada {
+        font-size: 33pt;
+    }
+    .texto-internet-ilimitada {
+        font-size: 15pt;
+    }
+    .internet-ilimitada::after {
+        content: '';
+        position: absolute;
+        background-image: url(../_img/rocket_parralax.jpg) !important;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: -40px;
+        background-attachment: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .botao-internet-ilimitada {
+        transition: border .3s;
+    }
+    .botao-internet-ilimitada:hover {
+        border: 2px solid rgb(27, 92, 184);
+        transition: border .3s;
+        color: white;
+    }
+    /* ------------------------- */
+    /* ------ Como Funciona --------- */
+    .como-funciona {
+        margin: 70px 0;
+    }
+    .como-funciona .title-como-funciona h3 {
+        font-size: 32pt;
+    }
+    .passo-a-passo-como-funciona {
+        margin: 50px 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .passo-a-passo-como-funciona .seta-passo-a-passo {
+        width: 35px;
+        height: 35px;
+        background-image: url(../_img/seta-passo-a-passo.svg);
+        background-repeat: no-repeat;
+    }
+    .passo-a-passo-como-funciona .etapa p {
+        font-size: 65pt;
+    }
+    .passo-a-passo-como-funciona .etapa svg {
+        height: 35px;
+        margin-top: -20px;
+    }
+    .passo-a-passo-como-funciona .etapa div p {
+        font-size: 16pt;
+    }
+    .botao-baixar-app {
+        transition: background-color .3s;
+    }
+    .botao-baixar-app:hover {
+        background-color: rgb(230, 128, 4);
+        transition: background-color .3s;
+    }
+    /* ------------------------------ */
+
+    /* ---------- Saiba Mais ----------- */
+    
+    @media screen and (min-width:1080px) {
+        .spec-saiba-mais {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .spec-saiba-mais .spec {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 80px 20px;
+            max-width: 500px;
+        }
+        .spec-saiba-mais .right .spec {
+            flex-direction: row;
+        }
+        .spec-saiba-mais .left .spec .txt-spec {
+            text-align: right;
+            margin-right: 20px;
+        }
+        .spec-saiba-mais .right .spec .txt-spec {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .spec-saiba-mais .spec .txt-spec p {
+            margin: 0;
+        }
+        .spec-saiba-mais .suporte {
+            margin-top: 0;
+        }
+        .spec-saiba-mais .jogos-online {
+            margin-top: 0;
+        }
+    }
+    /* ------------------------------ */
+    /*------------ Termina Section ------------*/
+}

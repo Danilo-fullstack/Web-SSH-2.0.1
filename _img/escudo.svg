@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.911" height="63.021" viewBox="0 0 48.911 63.021">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+  </defs>
+  <g id="Escudo" transform="translate(0 0)">
+    <g id="Grupo_211" data-name="Grupo 211" opacity="0.7">
+      <path id="Caminho_346" data-name="Caminho 346" d="M386.946,473.18,362.49,488.23s0,31.042,24.456,47.971C411.4,519.27,411.4,488.23,411.4,488.23Z" transform="translate(-362.49 -473.18)" fill="url(#linear-gradient)"/>
+    </g>
+    <path id="Caminho_356" data-name="Caminho 356" d="M391.067,480.23,368,494.433s0,29.293,23.08,45.27c23.08-15.977,23.08-45.27,23.08-45.27Z" transform="translate(-366.612 -478.454)" fill="#ff9e24"/>
+    <path id="Caminho_357" data-name="Caminho 357" d="M459.936,480.23l-.4.252v58.96l.4.277c23.08-15.977,23.08-45.27,23.08-45.27Z" transform="translate(-435.087 -478.454)" opacity="0.05"/>
+    <path id="Caminho_358" data-name="Caminho 358" d="M398.959,493.85,378.55,506.413s0,25.912,20.409,40.047c20.409-14.135,20.409-40.047,20.409-40.047Z" transform="translate(-374.503 -488.642)" fill="#ff9e24"/>
+    <path id="Caminho_359" data-name="Caminho 359" d="M459.55,494.24v52.6c20.409-14.135,20.409-40.047,20.409-40.047Z" transform="translate(-435.094 -488.934)" opacity="0.08"/>
+    <path id="Caminho_360" data-name="Caminho 360" d="M363.718,309.582l6.713,6.154,9.511-13.986,3.357,2.8-12.867,16.783-9.51-10.629Z" transform="translate(-346.452 -281.749)" fill="#fff"/>
+  </g>
+</svg>

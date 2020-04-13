@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7d2e722761.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./_img/icon-logo.png">
     <link rel="stylesheet" href="_css/reset.css?v=1.1">
     <link rel="stylesheet" href="./_css/fonts.css?v=1.3">
     <link rel="stylesheet" href="_css/main.css?v=1.1">
-    <link rel="stylesheet" href="_css/mobile.css?v=1.4">
-    <link rel="stylesheet" href="_css/desktop.css?v=1.1">
+    <link rel="stylesheet" href="_css/mobile.css?v=1.9">
+    <link rel="stylesheet" href="_css/desktop.css?v=1.2">
     <title>Web SSH</title>
 </head>
 <body>
     <header>
-        <h1 style="display: none;">Internet do http-injector</h1>
+        <div class="center-header">
+            <h1 style="display: none;">Internet do http injector</h1>
         <nav>
             <div class="top-header">
                 <a href="./index.html"><img src="./_img/logo.svg" class="logo"></a>
@@ -29,19 +31,25 @@
             <ul class="menu">
                 <li><a href="./index.html">Início</a></li>
                 <li><a href="#">Planos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="https://t.me/DaniloWeb" target="_blank">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
+                <li><a href="#" id="btn-login">Login</a></li>
             </ul>
         </nav>
         <div class="header-welcome">
-            <h4>Servidor BR</h4>
-            <h4 id="txt-alta">Alta Performance</h4>
-            <p>Internet ilimitada e ACESSÍVEL</p>
-            <p>A partir de <span>R$ 10,00/mês</span></p>
-            <a href="#planos">
-                <div class="veja-abaixo"><p>Veja abaixo</p></div>
-            </a>
+            <div class="center-header-welcome">
+                <h4>Servidor BR</h4>
+                <h4 id="txt-alta">Alta Performance</h4>
+                <p class="txt1-welcome">Internet ilimitada e ACESSÍVEL</p>
+                <p>A partir de <span>R$ 10,00/mês</span></p>
+                <!-- <a href="#planos">
+                    <div class="veja-abaixo"><p>Veja abaixo</p></div>
+                </a> -->
+                <a href="#planos" class="veja-abaixo">Veja abaixo</a>
+            </div>
         </div>
+        </div>
+        
     </header>
     <section>
         <div class="planos">
@@ -49,116 +57,441 @@
                 <h3>Escolha seu Plano</h3>
                 <div></div>
             </div>
-            <div class="box-plano plano-basico" id="planos">
-                <div class="plan-center">
-                    <h4 class="titulo-plan">Básico</h4>
-                    <div class="preco-plan">
-                        <p>R$</p>
-                        <p id="p-meio-plan">10</p>
-                        <p>/mês</p>
+            <div class="center-planos">
+                <div class="box-plano plano-basico" id="planos">
+                    <div class="plan-center">
+                        <h4 class="titulo-plan">Básico</h4>
+                        <div class="preco-plan">
+                            <p>R$</p>
+                            <p id="p-meio-plan">10</p>
+                            <p>/mês</p>
+                        </div>
+                        <div class="underline-plan"></div>
+                        <div class="descricao-plan">
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>1 Usuário</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Chamadas VOIP</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Ilimitado</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Jogos Online</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Netflix</p>
+                            </div>
+                        </div>
+                        <a href="https://t.me/DaniloWeb" class="btn-comprar" target="_blank">
+                            <img src="./_img/botao_comprar.svg">
+                        </a>
                     </div>
-                    <div class="underline-plan"></div>
-                    <div class="descricao-plan">
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>1 Usuário</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Chamadas VOIP</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Ilimitado</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Jogos Online</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Netflix</p>
-                        </div>
-                    </div>
-                    <a href="./index.html" class="btn-comprar">
-                        <img src="./_img/botao_comprar.svg">
-                    </a>
                 </div>
-            </div>
-            <div class="box-plano plano-familiar">
-                <div class="plan-center">
-                    <h4 class="titulo-plan">Familiar</h4>
-                    <div class="preco-plan">
-                        <p>R$</p>
-                        <p id="p-meio-plan">40</p>
-                        <p>/mês</p>
+                <div class="box-plano plano-familiar">
+                    <div class="plan-center">
+                        <h4 class="titulo-plan">Familiar</h4>
+                        <div class="preco-plan">
+                            <p>R$</p>
+                            <p id="p-meio-plan">40</p>
+                            <p>/mês</p>
+                        </div>
+                        <div class="underline-plan"></div>
+                        <div class="descricao-plan">
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>5 Usuário</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Chamadas VOIP</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Ilimitado</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Jogos Online</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Netflix</p>
+                            </div>
+                        </div>
+                        <a href="https://t.me/DaniloWeb" class="btn-comprar" target="_blank">
+                            <img src="./_img/botao_comprar.svg">
+                        </a>
                     </div>
-                    <div class="underline-plan"></div>
-                    <div class="descricao-plan">
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>5 Usuário</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Chamadas VOIP</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Ilimitado</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Jogos Online</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Netflix</p>
-                        </div>
-                    </div>
-                    <a href="./index.html" class="btn-comprar">
-                        <img src="./_img/botao_comprar.svg">
-                    </a>
                 </div>
-            </div>
-            <div class="box-plano plano-plus">
-                <div class="plan-center">
-                    <h4 class="titulo-plan">Plus</h4>
-                    <div class="preco-plan">
-                        <p>R$</p>
-                        <p id="p-meio-plan">20</p>
-                        <p>/mês</p>
+                <div class="box-plano plano-plus">
+                    <div class="plan-center">
+                        <h4 class="titulo-plan">Plus</h4>
+                        <div class="preco-plan">
+                            <p>R$</p>
+                            <p id="p-meio-plan">20</p>
+                            <p>/mês</p>
+                        </div>
+                        <div class="underline-plan"></div>
+                        <div class="descricao-plan">
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>3 Usuário</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Chamadas VOIP</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Ilimitado</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Jogos Online</p>
+                            </div>
+                            <div class="line-plan">
+                                <i class="far fa-circle"></i>
+                                <p>Netflix</p>
+                            </div>
+                        </div>
+                        <a href="https://t.me/DaniloWeb" class="btn-comprar" target="_blank">
+                            <img src="./_img/botao_comprar.svg">
+                        </a>
                     </div>
-                    <div class="underline-plan"></div>
-                    <div class="descricao-plan">
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>3 Usuário</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Chamadas VOIP</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Ilimitado</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Jogos Online</p>
-                        </div>
-                        <div class="line-plan">
-                            <i class="far fa-circle"></i>
-                            <p>Netflix</p>
-                        </div>
-                    </div>
-                    <a href="./index.html" class="btn-comprar">
-                        <img src="./_img/botao_comprar.svg">
-                    </a>
                 </div>
             </div>
         </div>
+        <div class="internet-ilimitada">
+            <div class="box-center">
+                <div class="title-internet-ilimitada">
+                    <h3>Internet Ilimitada</h3>
+                </div>
+                <div class="texto-internet-ilimitada">
+                    <p>Aqui você pode usar a internet a vontade</p>
+                    <p>pois não há limite de uso</p>
+                </div>
+                <a href="https://t.me/DaniloWeb" target="_blank" class="botao-internet-ilimitada">Confira</a>
+            </div>
+        </div>
+        <div class="como-funciona">
+            <div class="title-como-funciona">
+                <h3>Como Funciona?</h3>
+            </div>
+            <div class="firt-txt-como-funciona">
+                <p>É tão simples quanto instalar um app</p>
+                <p>confira abaixo o passo a passo</p>
+            </div>
+            <div class="passo-a-passo-como-funciona">
+                <div class="1-etapa etapa">
+                    <p>1</p>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 224.993 224.993" style="enable-background:new 0 0 224.993 224.993;" xml:space="preserve">
+                        <path d="M201.539,91.023L48.002,3.26C44.271,1.127,40.026,0,35.728,0c-4.354,0-8.646,1.155-12.412,3.34
+                            c-7.6,4.409-12.321,12.606-12.321,21.393V200.26c0,8.786,4.721,16.983,12.319,21.392c3.766,2.187,8.059,3.342,12.413,3.342
+                            c4.296,0,8.541-1.128,12.274-3.261l153.535-87.764c7.686-4.394,12.46-12.621,12.46-21.473S209.224,95.417,201.539,91.023z
+                            M135.006,70.271l-21.081,29.364L63.5,29.397L135.006,70.271z M34.76,209.908c-1.371-0.133-2.716-0.533-3.917-1.23
+                            c-2.99-1.735-4.848-4.961-4.848-8.418V24.732c0-3.457,1.858-6.683,4.849-8.418c1.197-0.695,2.531-1.109,3.902-1.25l69.946,97.432
+                            L34.76,209.908z M63.5,195.596l50.425-70.239l21.081,29.364L63.5,195.596z M194.094,120.945l-45.996,26.292l-24.941-34.741
+                            l24.941-34.741l45.996,26.292c3.024,1.729,4.903,4.966,4.903,8.449S197.119,119.217,194.094,120.945z"/>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                    <div>
+                        <p>Baixe o App</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="seta-passo-a-passo"></div>
+                <div class="2-etapa etapa">
+                    <p>2</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="511pt" version="1.1" viewBox="-53 1 511 511.99906">
+                        <g id="surface1">
+                        <path d="M 276.410156 3.957031 C 274.0625 1.484375 270.84375 0 267.507812 0 L 67.777344 0 C 30.921875 0 0.5 30.300781 0.5 67.152344 L 0.5 444.84375 C 0.5 481.699219 30.921875 512 67.777344 512 L 338.863281 512 C 375.71875 512 406.140625 481.699219 406.140625 444.84375 L 406.140625 144.941406 C 406.140625 141.726562 404.65625 138.636719 402.554688 136.285156 Z M 279.996094 43.65625 L 364.464844 132.328125 L 309.554688 132.328125 C 293.230469 132.328125 279.996094 119.21875 279.996094 102.894531 Z M 338.863281 487.265625 L 67.777344 487.265625 C 44.652344 487.265625 25.234375 468.097656 25.234375 444.84375 L 25.234375 67.152344 C 25.234375 44.027344 44.527344 24.734375 67.777344 24.734375 L 255.261719 24.734375 L 255.261719 102.894531 C 255.261719 132.945312 279.503906 157.0625 309.554688 157.0625 L 381.40625 157.0625 L 381.40625 444.84375 C 381.40625 468.097656 362.113281 487.265625 338.863281 487.265625 Z M 338.863281 487.265625 " style=" stroke:none;fill-rule:nonzero;fill:#8635EC;fill-opacity:1;" />
+                        <path d="M 305.101562 401.933594 L 101.539062 401.933594 C 94.738281 401.933594 89.171875 407.496094 89.171875 414.300781 C 89.171875 421.101562 94.738281 426.667969 101.539062 426.667969 L 305.226562 426.667969 C 312.027344 426.667969 317.59375 421.101562 317.59375 414.300781 C 317.59375 407.496094 312.027344 401.933594 305.101562 401.933594 Z M 305.101562 401.933594 " style=" stroke: none;fill-rule:nonzero;fill:#8635EC;fill-opacity:1;" />
+                        <path d="M 194.292969 357.535156 C 196.644531 360.007812 199.859375 361.492188 203.320312 361.492188 C 206.785156 361.492188 210 360.007812 212.347656 357.535156 L 284.820312 279.746094 C 289.519531 274.796875 289.148438 266.882812 284.203125 262.308594 C 279.253906 257.609375 271.339844 257.976562 266.765625 262.925781 L 215.6875 317.710938 L 215.6875 182.664062 C 215.6875 175.859375 210.121094 170.296875 203.320312 170.296875 C 196.519531 170.296875 190.953125 175.859375 190.953125 182.664062 L 190.953125 317.710938 L 140 262.925781 C 135.300781 257.980469 127.507812 257.609375 122.5625 262.308594 C 117.617188 267.007812 117.246094 274.800781 121.945312 279.746094 Z M 194.292969 357.535156 " style=" stroke:none;fill-rule:nonzero;fill:#8635EC;fill-opacity:1;" />
+                        </g>
+                        </svg>
+                    <div>
+                        <p>Importe o Arquivo</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="seta-passo-a-passo"></div>
+                <div class="3-etapa etapa">
+                    <p>3</p>
+                    <svg id="Capa_1" enable-background="new 0 0 509.759 509.759" height="512" viewBox="0 0 509.759 509.759" xmlns="http://www.w3.org/2000/svg"><path d="m361.379 0h-213c-24.813 0-45 20.187-45 45v419.759c0 24.813 20.187 45 45 45h213c24.813 0 45-20.187 45-45v-419.759c0-24.813-20.186-45-45-45zm15 464.759c0 8.271-6.729 15-15 15h-213c-8.271 0-15-6.729-15-15v-419.759c0-8.271 6.729-15 15-15h213c8.271 0 15 6.729 15 15z"/><path d="m317.212 246.244h-9.493v-16.846c0-29.136-23.704-52.84-52.84-52.84s-52.84 23.704-52.84 52.84v16.846h-9.494c-8.284 0-15 6.716-15 15v86.892c0 8.284 6.716 15 15 15h124.667c8.284 0 15-6.716 15-15v-86.892c0-8.284-6.715-15-15-15zm-85.172-16.846c0-12.594 10.246-22.84 22.84-22.84s22.84 10.246 22.84 22.84v16.846h-45.68zm70.172 103.738h-94.667v-56.892h94.667z"/><path d="m225.879 91.759h58c8.284 0 15-6.716 15-15s-6.716-15-15-15h-58c-8.284 0-15 6.716-15 15s6.716 15 15 15z"/></svg>
+                    <div>
+                        <p>Insira o Login</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="seta-passo-a-passo"></div>
+                <div class="4-etapa etapa">
+                    <p>4</p>
+                    <svg id="Layer_1" enable-background="new 0 0 512.058 512.058" height="512" viewBox="0 0 512.058 512.058" xmlns="http://www.w3.org/2000/svg"><path d="m460.051 117.396h-120.365v-62.764h-200.729v-24.632h16.382v-30h-62.764v30h16.382v398.727c-32.349 5.921-56.95 34.297-56.95 68.331v15h143.9v-15c0-34.033-24.601-62.41-56.95-68.331v-205.676h85.546v62.764h235.549l-50.911-84.21zm-297.104 364.662h-77.98c5.917-14.354 20.061-24.485 36.524-24.485h4.931c16.464-.001 30.608 10.13 36.525 24.485zm-23.99-397.426h170.729v108.419h-170.729zm140.083 138.419-24.538 18.08v-18.08zm127.818 32.764h-121.71l54.538-40.184v-68.236h67.172l-32.774 54.209z"/></svg>
+                    <div>
+                        <p>Toque em Iniciar</p>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-txt-como-funciona">
+                <p>Pronto você já estará conectado a internet</p>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.evozi.injector" target="_blank" class="botao-baixar-app">Baixar App</a>
+        </div>
+        <div class="saiba-mais">
+            <div class="center-saiba-mais">
+                <div class="title-saiba-mais">
+                    <h3>Saiba Mais</h3>
+                </div>
+                <div class="spec-saiba-mais">
+                    <div class="left">
+                        <div class="spec suporte">
+                            <div class="icon-spec">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 73">
+                                    <g id="Telegram" transform="translate(0 0)">
+                                    <g id="Elipse_40" data-name="Elipse 40" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="3">
+                                        <circle cx="36.5" cy="36.5" r="36.5" stroke="none"/>
+                                        <circle cx="36.5" cy="36.5" r="35" fill="none"/>
+                                    </g>
+                                    <path id="telegram-2" data-name="telegram" d="M.709,18.425l10.029,5a1.285,1.285,0,0,0,1.217-.039l8.927-5.19-5.4,4.788a1.283,1.283,0,0,0-.432.96V35.606a1.284,1.284,0,0,0,2.307.771l4.335-5.764,10.721,6.106a1.281,1.281,0,0,0,1.89-.861L40.986,2.535a1.282,1.282,0,0,0-1.723-1.446L.815,16.084a1.283,1.283,0,0,0-.106,2.341Zm37.3-14.1L32.136,33.613,21.977,27.827a1.284,1.284,0,0,0-1.659.343l-2.708,3.6V24.519L32.221,11.573a1.282,1.282,0,0,0-1.494-2.068L11.264,20.821l-6.822-3.4Z" transform="translate(12.999 18.003)" fill="#fff"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="txt-spec">
+                                <h5 class="title-spec">Suporte</h5>
+                                <p>Estamos prontos para te ajudar a qualquer momento</p>
+                            </div>
+                        </div>
+                        <div class="spec netflix">
+                            <div class="icon-spec">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+                                    <g id="netflix" transform="translate(0)">
+                                    <g id="Elipse_45" data-name="Elipse 45" transform="translate(0)" fill="none" stroke="#fff" stroke-width="3">
+                                        <circle cx="36" cy="36" r="36" stroke="none"/>
+                                        <circle cx="36" cy="36" r="34.5" fill="none"/>
+                                    </g>
+                                    <g id="Grupo_133" data-name="Grupo 133" transform="translate(23 17)">
+                                        <path id="Caminho_205" data-name="Caminho 205" d="M100.142,0V17.4L91.973,0H83.505V37.859l1.289-.212c2.157-.354,4.362-.611,6.551-.763l1.033-.071V20.257l7.775,16.561.655.042c2.313.148,4.641.413,6.919.787l1.289.212V0ZM90.16,34.751c-1.482.124-2.967.294-4.437.508V6.082l4.436,9.45Zm11.445-.059L86.36,2.218h4.2l15.458,32.932C104.557,34.953,103.079,34.8,101.6,34.692ZM106.8,31.58l-4.436-9.452V2.218H106.8Z" transform="translate(-83.505)" fill="#fff"/>
+                                    </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="txt-spec">
+                                <h5 class="title-spec">Netflix</h5>
+                                <p>Agora você pode maratonar aquela série que você queria em qualquer lugar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spec celular">
+                        <img src="./_img/flat-version.svg">
+                    </div>
+                    <div class="right">
+                        <div class="spec jogos-online">
+                        <div class="icon-spec">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 73">
+                                <g id="Game" transform="translate(0 0)">
+                                  <g id="console" transform="translate(13.773 21.736)">
+                                    <g id="Grupo_122" data-name="Grupo 122" transform="translate(0)">
+                                      <g id="Grupo_121" data-name="Grupo 121">
+                                        <path id="Caminho_203" data-name="Caminho 203" d="M45.578,75.823a42.567,42.567,0,0,0-1.25-8.236,31.61,31.61,0,0,0-2.556-6.929c-3.976-6.986-8.293-5.907-13.461-4.544a37,37,0,0,1-5.225,1.022h-.568a37,37,0,0,1-5.225-1.022c-5.169-1.306-9.485-2.442-13.461,4.6a28.956,28.956,0,0,0-2.556,6.929A42.567,42.567,0,0,0,.025,75.88a15.476,15.476,0,0,0,.8,6.475,4.3,4.3,0,0,0,2.726,2.556,5.553,5.553,0,0,0,3.635-.4,26.7,26.7,0,0,0,7.27-5.169c1.761-1.7,5.055-2.556,8.349-2.556s6.589.852,8.349,2.556a26.7,26.7,0,0,0,7.27,5.169,5.942,5.942,0,0,0,3.635.4A4.244,4.244,0,0,0,44.782,82.3,15.187,15.187,0,0,0,45.578,75.823ZM42.851,81.5a2.252,2.252,0,0,1-1.363,1.42,3.922,3.922,0,0,1-2.329-.284,23.164,23.164,0,0,1-6.589-4.714c-2.158-2.158-5.964-3.238-9.769-3.238s-7.611,1.079-9.826,3.124a23.6,23.6,0,0,1-6.589,4.714,3.523,3.523,0,0,1-2.329.284,2.252,2.252,0,0,1-1.363-1.42,13.431,13.431,0,0,1-.568-5.453A39.179,39.179,0,0,1,3.319,68.1,27.1,27.1,0,0,1,5.7,61.68c3.124-5.623,6.759-4.714,11.076-3.578a33.319,33.319,0,0,0,5.566,1.079H23.2A32.906,32.906,0,0,0,28.822,58.1c4.317-1.079,7.952-2.045,11.076,3.578A26.191,26.191,0,0,1,42.283,68.1a42.99,42.99,0,0,1,1.193,7.838A13.143,13.143,0,0,1,42.851,81.5Z" transform="translate(0 -55.109)" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                    <g id="Grupo_124" data-name="Grupo 124" transform="translate(5.875 5.662)">
+                                      <g id="Grupo_123" data-name="Grupo 123" transform="translate(0 0)">
+                                        <path id="Caminho_204" data-name="Caminho 204" d="M53.074,98.957a3.451,3.451,0,0,0-2.045-.966A3.232,3.232,0,0,0,50.12,96l-.057-.057a3.217,3.217,0,0,0-2.329-.966,3.354,3.354,0,0,0-2.329.966,3.3,3.3,0,0,0-.966,2.045A3.384,3.384,0,0,0,42.4,98.9l-.057.057a3.217,3.217,0,0,0-.966,2.329,3.354,3.354,0,0,0,.966,2.329,3.167,3.167,0,0,0,2.1.966,3.03,3.03,0,0,0,.966,2.045,3.217,3.217,0,0,0,2.329.966,3.354,3.354,0,0,0,2.329-.966,3.451,3.451,0,0,0,.966-2.045,3.03,3.03,0,0,0,2.045-.966,3.217,3.217,0,0,0,.966-2.329A3.354,3.354,0,0,0,53.074,98.957Zm-1.42,3.181a1.156,1.156,0,0,1-.852.341h-.8a1.078,1.078,0,0,0-1.079,1.079v.738a1.193,1.193,0,1,1-2.386,0v-.8a1.078,1.078,0,0,0-1.079-1.079h-.8a1.165,1.165,0,0,1-.852-1.988l.057-.057a1.357,1.357,0,0,1,.8-.284h.8a1.078,1.078,0,0,0,1.079-1.079v-.8a1.205,1.205,0,0,1,2.045-.852l.057.057a1.357,1.357,0,0,1,.284.8v.8a1.078,1.078,0,0,0,1.079,1.079h.8a1.205,1.205,0,0,1,.852,2.045Z" transform="translate(-41.373 -94.981)" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                    <g id="Grupo_126" data-name="Grupo 126" transform="translate(30.696 5.946)">
+                                      <g id="Grupo_125" data-name="Grupo 125">
+                                        <circle id="Elipse_41" data-name="Elipse 41" cx="1.988" cy="1.988" r="1.988" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                    <g id="Grupo_128" data-name="Grupo 128" transform="translate(30.696 14.011)">
+                                      <g id="Grupo_127" data-name="Grupo 127" transform="translate(0 0)">
+                                        <circle id="Elipse_42" data-name="Elipse 42" cx="1.988" cy="1.988" r="1.988" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                    <g id="Grupo_130" data-name="Grupo 130" transform="translate(26.663 9.978)">
+                                      <g id="Grupo_129" data-name="Grupo 129">
+                                        <circle id="Elipse_43" data-name="Elipse 43" cx="1.988" cy="1.988" r="1.988" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                    <g id="Grupo_132" data-name="Grupo 132" transform="translate(34.729 9.978)">
+                                      <g id="Grupo_131" data-name="Grupo 131">
+                                        <circle id="Elipse_44" data-name="Elipse 44" cx="1.988" cy="1.988" r="1.988" fill="#fff"/>
+                                      </g>
+                                    </g>
+                                  </g>
+                                  <g id="Elipse_45" data-name="Elipse 45" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="3">
+                                    <circle cx="36.5" cy="36.5" r="36.5" stroke="none"/>
+                                    <circle cx="36.5" cy="36.5" r="35" fill="none"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </div>
+                        <div class="txt-spec">
+                            <h5 class="title-spec">Jogos Online</h5>
+                            <p>Se divirta com seu jogos favoritos</p>
+                        </div>
+                        </div>
+                        <div class="spec segurança">
+                            <div class="icon-spec">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 73">
+                                    <g id="Secgurança" transform="translate(0)">
+                                    <g id="Elipse_40" data-name="Elipse 40" transform="translate(0)" fill="none" stroke="#fff" stroke-width="3">
+                                        <ellipse cx="36" cy="36.5" rx="36" ry="36.5" stroke="none"/>
+                                        <ellipse cx="36" cy="36.5" rx="34.5" ry="35" fill="none"/>
+                                    </g>
+                                    <g id="lock" transform="translate(21 16)">
+                                        <g id="Grupo_135" data-name="Grupo 135" transform="translate(3.823)">
+                                        <g id="Grupo_134" data-name="Grupo 134" transform="translate(0)">
+                                            <path id="Caminho_209" data-name="Caminho 209" d="M123.956,0a11.322,11.322,0,0,0-11.309,11.309v5.537a.683.683,0,0,0,.683.683h3.791a.683.683,0,0,0,.683-.683V11.309a6.152,6.152,0,1,1,12.3,0v5.537a.683.683,0,0,0,.683.683h3.791a.683.683,0,0,0,.683-.683V11.309A11.322,11.322,0,0,0,123.956,0ZM133.9,16.164h-2.426V11.309a7.517,7.517,0,1,0-15.035,0v4.855h-2.426V11.309a9.943,9.943,0,1,1,19.886,0Z" transform="translate(-112.647)" fill="#fff"/>
+                                        </g>
+                                        </g>
+                                        <g id="Grupo_137" data-name="Grupo 137" transform="translate(0 16.164)">
+                                        <g id="Grupo_136" data-name="Grupo 136" transform="translate(0)">
+                                            <path id="Caminho_210" data-name="Caminho 210" d="M91.514,204.89h-24.4a2.937,2.937,0,0,0-2.934,2.934v18.36a2.937,2.937,0,0,0,2.934,2.934h24.4a2.937,2.937,0,0,0,2.934-2.934v-18.36A2.937,2.937,0,0,0,91.514,204.89Zm1.568,21.294a1.57,1.57,0,0,1-1.568,1.568h-24.4a1.57,1.57,0,0,1-1.568-1.568v-18.36a1.57,1.57,0,0,1,1.568-1.568h24.4a1.57,1.57,0,0,1,1.568,1.568Z" transform="translate(-64.183 -204.89)" fill="#fff"/>
+                                        </g>
+                                        </g>
+                                        <g id="Grupo_139" data-name="Grupo 139" transform="translate(11.574 22.902)">
+                                        <g id="Grupo_138" data-name="Grupo 138">
+                                            <path id="Caminho_211" data-name="Caminho 211" d="M216.744,296.577a3.559,3.559,0,1,0-4.593,0l-.768,3.657a.683.683,0,0,0,.668.823h4.792a.683.683,0,0,0,.668-.823Zm-1.125-.865a.683.683,0,0,0-.3.716l.685,3.263h-3.109l.685-3.263a.683.683,0,0,0-.3-.716,2.193,2.193,0,1,1,2.343,0Z" transform="translate(-210.889 -290.307)" fill="#fff"/>
+                                        </g>
+                                        </g>
+                                    </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="txt-spec">
+                                <h5 class="title-spec">Segurança</h5>
+                                <p>Navegue com mais segurança e proteja seus dados com uma conexão SSH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ficou-alguma-duvida">
+            <div class="center-ficou-alguma-duvida">
+                <div class="icon">
+                    <img src="./_img/svg-ficou-alguma-duvida.svg">
+                </div>
+                <div class="title">
+                    <h3>Ficou alguma dúvida?</h3>
+                </div>
+                <div class="txt">
+                    <p>Entre em contato conosco para tirar suas dúvidas</p>
+                </div>
+                <a href="https://t.me/DaniloWeb" target="_blank" class="btn">Acessar</a>
+            </div>
+        </div>
     </section>
+    <footer>
+        <div class="center-footer">
+            <div class="garantia">
+                <img src="./_img/escudo.svg">
+                <p>30 dias de garantia</p>
+            </div>
+            <div class="pay">
+                <img src="./_img/formas-de-pagamento.svg">
+            </div>
+            <div class="redes-sociais">
+                <a href="#">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M452,0H60C26.916,0,0,26.916,0,60v392c0,33.084,26.916,60,60,60h392c33.084,0,60-26.916,60-60V60
+                                    C512,26.916,485.084,0,452,0z M472,452c0,11.028-8.972,20-20,20H338V309h61.79L410,247h-72v-43c0-16.975,13.025-30,30-30h41v-62
+                                    h-41c-50.923,0-91.978,41.25-91.978,92.174V247H216v62h60.022v163H60c-11.028,0-20-8.972-20-20V60c0-11.028,8.972-20,20-20h392
+                                    c11.028,0,20,8.972,20,20V452z"/>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 511 511.9"xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
+                </a>
+                <a href="https://t.me/DaniloWeb" target="_blank">
+                    <svg viewBox="0 -39 512.00011 512" xmlns="http://www.w3.org/2000/svg"><path d="m504.09375 11.859375c-6.253906-7.648437-15.621094-11.859375-26.378906-11.859375-5.847656 0-12.042969 1.230469-18.410156 3.664062l-433.398438 165.441407c-23 8.777343-26.097656 21.949219-25.8984375 29.019531s4.0390625 20.046875 27.4999995 27.511719c.140626.042969.28125.085937.421876.125l89.898437 25.726562 48.617187 139.023438c6.628907 18.953125 21.507813 30.726562 38.835938 30.726562 10.925781 0 21.671875-4.578125 31.078125-13.234375l55.605469-51.199218 80.652344 64.941406c.007812.007812.019531.011718.027343.019531l.765625.617187c.070313.054688.144532.113282.214844.167969 8.964844 6.953125 18.75 10.625 28.308594 10.628907h.003906c18.675781 0 33.546875-13.824219 37.878906-35.214844l71.011719-350.640625c2.851563-14.074219.460937-26.667969-6.734375-35.464844zm-356.191406 234.742187 173.441406-88.605468-107.996094 114.753906c-1.769531 1.878906-3.023437 4.179688-3.640625 6.683594l-20.824219 84.351562zm68.132812 139.332032c-.71875.660156-1.441406 1.25-2.164062 1.792968l19.320312-78.25 35.144532 28.300782zm265.390625-344.566406-71.011719 350.644531c-.683593 3.355469-2.867187 11.164062-8.480468 11.164062-2.773438 0-6.257813-1.511719-9.824219-4.257812l-91.390625-73.585938c-.011719-.011719-.027344-.023437-.042969-.03125l-54.378906-43.789062 156.175781-165.949219c5-5.3125 5.453125-13.449219 1.074219-19.285156-4.382813-5.835938-12.324219-7.671875-18.820313-4.351563l-256.867187 131.226563-91.121094-26.070313 433.265625-165.390625c3.660156-1.398437 6.214844-1.691406 7.710938-1.691406.917968 0 2.550781.109375 3.15625.855469.796875.972656 1.8125 4.289062.554687 10.511719zm0 0"/></svg>
+                </a>
+                <a href="#">
+                    <svg id="Bold" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"/><path d="m20.52 3.449c-7.689-7.433-20.414-2.042-20.419 8.444 0 2.096.549 4.14 1.595 5.945l-1.696 6.162 6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99z"/></svg>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>Web SSH © 2020 - Todos os direitos autorais reservados</p>
+                <p>Criado com muito <img src="./_img/heart.svg"> por Danilo</p>
+            </div>
+        </div>
+    </footer>
     <script src="./_scripts/app.js"></script>
     <script src="./_scripts/jquery-3.1.1.min.js?v=1.4"></script>
 </body>
