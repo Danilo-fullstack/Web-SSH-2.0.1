@@ -10,7 +10,9 @@ body {
 header {
     display: grid;
     min-height: 450px;
-    background-color: #320B66;
+    /* background-color: #320B66; */
+    background: url(../_img/slide-header.jpg);
+        background-size: cover;
 }
 .logo {
     position: absolute;
