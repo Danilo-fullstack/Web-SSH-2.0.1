@@ -301,6 +301,14 @@
     .center-footer {
         z-index: 1;
     }
+    .center-footer .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
     .center-footer .redes-sociais a svg {
         transition: fill .3s;
     }

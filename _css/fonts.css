@@ -3,6 +3,10 @@
     src: url(../_font/poppins/Poppins-SemiBold.ttf);
 }
 @font-face {
+    font-family: poppins-bold;
+    src: url(../_font/poppins/Poppins-Bold.ttf);
+}
+@font-face {
     font-family: poppins-medium;
     src: url(../_font/poppins/Poppins-Medium.ttf);
 }
