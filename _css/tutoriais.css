@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* --------------- Mobile --------------- */
+/* ---------- Header ---------- */
+header {
+    min-height: 500px;
+}
+.center-header-welcome .title {
+    font-size: 40pt;
+}
+.center-header-welcome .txt1-welcome {
+    margin: 20px;
+    font-size: 14pt;
+}
+.center-header-welcome .veja-abaixo {
+    margin-top: 0px;
+}
+/* ---------- Fim header ---------- */
+
+/* ---------- Section ---------- */
+
+.center-section {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video {
+    margin: 30px 0;
+}
+.video .back-video {
+    width: 320px;
+    height: 180px;
+}
+.video a {
+    position: relative;
+}
+.video .back-cor {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 320px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video .back-cor i {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 36pt;
+}
+.video .txt-video {
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video .txt-video p {
+    width: 240px;
+}
+@media screen and (max-width: 335px) {
+    .video .back-video {
+        width: 240px;
+        height: 130px;
+    }
+    .video .back-cor {
+        width: 240px;
+        height: 130px;
+    }
+}
+/* ---------- Fim section ---------- */
+/* --------------- Fim Mobile --------------- */
+
+/* --------------- Desktop --------------- */
+@media screen and (min-width: 870px) {
+    /* ---------- Header ---------- */
+    .header-welcome {
+        margin: 100px 0 0 0;
+        align-items: center;
+    }
+    .header-welcome .txt1-welcome {
+        margin: 10px 10px 5px 0 !important;
+        font-size: 18pt;
+        max-width: 80%;
+    }
+    .header-welcome .veja-abaixo {
+        margin-top: 15px !important;
+    }
+    .center-header-welcome .title {
+        font-size: 50pt;
+    }
+    /* ---------- Fim Header ---------- */
+
+    /* ---------- Section ---------- */
+    .center-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .center-section .video {
+        height: 240px;
+        margin: 20px;
+    }
+    .center-section .video a .back-cor {
+        transition: background-color .5s;
+    }
+    .center-section .video a:hover .back-cor {
+        background-color: rgba(0, 0, 0, 0.466);
+        transition: background-color .5s;
+    }
+    .center-section .video a:hover .back-cor i {
+        color: rgba(255, 255, 255, 0.815);
+    }
+    /* ---------- Fim Section ---------- */
+}
+/* --------------- Fim Desktop --------------- */

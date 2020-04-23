@@ -102,6 +102,9 @@ header {
     justify-content: center;
     text-align: center;
 }
+.header-welcome .celular-header {
+    display: none;
+}
 .header-welcome h4 {
     font-family: poppins-semibold;
     line-height: 35px;
