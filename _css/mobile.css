@@ -9,10 +9,9 @@ body {
 /*------ Cabeçalho ------ */
 header {
     display: grid;
-    min-height: 450px;
-    /* background-color: #320B66; */
+    min-height: 500px;
     background: url(../_img/slide-header.jpg);
-        background-size: cover;
+    background-size: cover;
 }
 .logo {
     position: absolute;
@@ -109,13 +108,20 @@ header {
     font-family: poppins-semibold;
     line-height: 35px;
     color: #FF9E24;
-    font-size: 26pt;
+    font-size: 35pt;
+    margin: 0 20px;
+}
+@media screen and (max-width: 350px) {
+    .header-welcome h4 {
+        font-size: 26pt;
+    }
 }
 #txt-alta {
     margin-bottom: 10px;
 }
 .header-welcome p {
     line-height: 30px;
+    margin: 0 20px;
 }
 .header-welcome p span {
     color: #FF9E24;
@@ -433,6 +439,11 @@ section .title-planos div {
 .spec-saiba-mais {
     margin-top: 50px;
 }
+@media screen and (max-width: 330px) {
+    .spec-saiba-mais .celular img {
+        width: 100%;
+    }
+}
 .spec-saiba-mais .spec {
     margin-top: 55px;
 }
@@ -449,11 +460,19 @@ section .title-planos div {
     margin: 0 22px;
     color: rgba(255, 255, 255, 0.5);
 }
+.spec-saiba-mais .segurança .title-spec {
+    word-wrap: break-word;
+}
 /*--- Termina Saiba Mais ---*/
 
 /*--- Começa Ficou Alguma Dúvida ---*/
 .center-ficou-alguma-duvida {
     margin: 100px 10px;
+}
+@media screen and (max-width: 330px) {
+    .center-ficou-alguma-duvida .icon img {
+        width: 90%;
+    }
 }
 .center-ficou-alguma-duvida .title h3{
     margin: 20px 0 10px 0;
@@ -473,6 +492,11 @@ section .title-planos div {
     padding: 10px 40px;
     border-radius: 50px;
     background-color: #FF9E24;
+}
+@media screen and (max-width: 330px) {
+    .center-ficou-alguma-duvida .btn {
+        padding: 7px 25px;
+    }
 }
 /*--- Termina Ficou Alguma Dúvida ---*/
 /* ----------------- Termina Corpo ------------------------ */

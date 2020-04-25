@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /* --------------- Mobile --------------- */
 /* ---------- Header ---------- */
-header {
-    min-height: 500px;
-}
-.center-header-welcome .title {
-    font-size: 40pt;
-}
 .center-header-welcome .txt1-welcome {
     margin: 20px;
     font-size: 14pt;

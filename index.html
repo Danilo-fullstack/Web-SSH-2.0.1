@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="_css/reset.css?v=1.1">
     <link rel="stylesheet" href="./_css/fonts.css?v=1.3">
     <link rel="stylesheet" href="_css/main.css?v=1.1">
-    <link rel="stylesheet" href="_css/mobile.css?v=1.9">
+    <link rel="stylesheet" href="_css/mobile.css?v=2.1">
     <link rel="stylesheet" href="_css/desktop.css?v=1.2">
     <title>Web SSH</title>
 </head>
@@ -30,10 +30,10 @@
             <input type="checkbox" id="chec" style="display: none;">
             <ul class="menu">
                 <li><a href="./index.html">Início</a></li>
-                <li><a href="#planos">Planos</a></li>
+                <li><a href="#planos" class="planos-mobile">Planos</a></li>
                 <li><a href="https://t.me/DaniloWeb" target="_blank">Contato</a></li>
                 <li><a href="./tutoriais.html">Tutoriais</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
                 <li><a href="http://13.59.150.122:81/" target="_blank"id="btn-login">Login</a></li>
             </ul>
         </nav>
@@ -43,9 +43,6 @@
                 <h4 id="txt-alta">Alta Performance</h4>
                 <p class="txt1-welcome">Internet ilimitada e ACESSÍVEL</p>
                 <p>A partir de <span>R$ 10,00/mês</span></p>
-                <!-- <a href="#planos">
-                    <div class="veja-abaixo"><p>Veja abaixo</p></div>
-                </a> -->
                 <a href="#planos" class="veja-abaixo">Veja abaixo</a>
             </div>
             <div class="celular-header">
@@ -547,5 +544,9 @@
     </footer>
     <script src="./_scripts/app.js"></script>
     <script src="./_scripts/jquery-3.1.1.min.js?v=1.4"></script>
+    <!-- <script>
+        $('.planos-mobile').attr('href', 'link que será passado')
+        console.log(planosMobile)
+    </script> -->
 </body>
 </html>

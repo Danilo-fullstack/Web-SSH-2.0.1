@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* --------------- Mobile --------------- */
+/* ---------- Header ---------- */
+.header-welcome .txt1-welcome {
+    margin-top: 10px;
+    font-size: 14pt;
+}
+/* ---------- Fim Header ---------- */
+/* ---------- Section ---------- */
+.center-section {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bloco {
+    margin: 50px 0;
+}
+.bloco .txt-sobre {
+    margin: 0 20px;
+}
+.bloco .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: normal;
+}
+.bloco .title::after {
+    content: 'a';
+    color: transparent;
+    /* width:15%; */
+    width: 45px;
+    height: 4px;
+    background-color: #FF9E24;
+}
+.bloco .txt {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.76);
+}
+.btn-confira {
+    font-size: 11pt;
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: #FF9E24;
+    color: white;
+}
+.bloco img {
+    display: none;
+}
+/* ---------- Fim Secion ---------- */
+/* --------------- Fim Mobile --------------- */
+
+/* --------------- Desktop --------------- */
+@media screen and (min-width: 850px) {
+    /* ---------- Header ---------- */
+    .header-welcome {
+        align-items: center;
+    }
+    .center-header-welcome {
+        margin-right: 50px;
+    }
+    .center-header-welcome .txt1-welcome {
+        margin-top: 15px;
+    }
+    /* ---------- Fim Header ---------- */
+    /* ---------- Section ---------- */
+    .center-section {
+        margin: 70px 30px;
+    }
+    .bloco {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 70px 0;
+    }
+    .bloco .txt-sobre {
+        text-align: left;
+        margin-right: 50px;
+        width: 50%;
+    }
+    .bloco .title {
+        align-items: flex-start;
+        font-size: 32pt;
+    }
+    .bloco .txt-sobre .txt {
+        font-size: 16pt;
+        margin: 20px 0;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .btn-confira {
+        transition: background-color .3s;
+    }
+    .btn-confira:hover {
+        background-color: rgb(238, 143, 28);
+        transition: background-color .3s;
+    }
+    .bloco img {
+        display: block;
+        width: 32%;
+    }
+    /* ---------- Fim Section ---------- */
+}
+/* --------------- Fim Desktop --------------- */

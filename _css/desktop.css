@@ -90,6 +90,10 @@
         .header-welcome h4 {
             font-size: 40pt;
             line-height: 50px;
+            margin: 0;
+        }
+        .center-header-welcome p {
+            margin: 0;
         }
         .header-welcome .celular-header {
             display: block;
